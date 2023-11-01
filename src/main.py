@@ -17,7 +17,7 @@ def format_operation(operation):
 
 
 def main():
-    with open('C:\\Users\\kutalov\\Desktop\\Coursework Basics of backend development\\operations.json', 'r', encoding='utf-8') as file:
+    with open('C:\\Users\\kutalov\\Desktop\\python_courswork\\operations.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
 
     executed_operations = [operation for operation in data if operation.get('state') in ['EXECUTED']]
